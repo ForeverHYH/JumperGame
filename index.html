@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JumpFingure</title>
+    <script src="JS/three.js"></script>
+    <script src="JS/JumperController.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { margin: 0; }
+    </style>
+</head>
+<body>
+<div id="WebGL-Output" style="width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;">
+    <div id="MarkDiv" style=" position: absolute;width: 100%;left: 0%;top:0%">
+        <h1 id="markH" align="center" style="font-size:60px;color:antiquewhite">分数:0</h1>
+    </div>
+    <div id="ChangeMarkDiv" style="position: absolute;width: 100%;left: 0%;top:5%">
+        <h1 id="getMark" align="center" style="font-size:80px;color:antiquewhite;opacity: 0">+5</h1>
+    </div>
+</div>
+<div id="FailedDiv" style="position: absolute;width: 100%;left: 0%;top:30%;display: none">
+    <h1 align="center" style="font-size:180px;color:darkred">失败</h1>
+    <button id="againBtn" class="btn btn-success" type="button" style="position: absolute;left: 40%;width: 20%;height: 40%;font-size:30px" onclick="ResetScene()">再来一局</button>
+</div>
+<script src="JS/MainThread.js"></script>
+</body>
+</html>
